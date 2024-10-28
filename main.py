@@ -491,8 +491,18 @@ class BW():
         print("Data Join ---",round((time_data_join-time.time())/60, 2),"mins")
         return data_explode
 
-
+## API KEY
 qfs = qfs(api_key_here)
+
+## INTERVALS
+FQ = 'FQ-19:FQ'
+FY = 'FY-19:FY'
+
+## FUNCTION RUN
+data_fy = BW.data(FY) # Yearly Data - Complete Dataset
+data_fq = BW.data(FQ) # Quarterly - Complete Dataset
+
+
 
 
 
