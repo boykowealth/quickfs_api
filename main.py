@@ -492,6 +492,8 @@ class BW():
         return data_explode
 
 
+qfs = qfs(api_key_here)
+
 
 
 
