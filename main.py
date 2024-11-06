@@ -22,7 +22,7 @@ class FS:
     
     @staticmethod
     def company_list():
-        comp_list = pd.read_feather(r"C:\Users\bboyk\OneDrive\BOYKO TERMINAL\PROGRAMS\Data\Data Hub\Equity\Equity_Firm\Firms\Firm_List.feather")
+        comp_list = pd.read_feather(r"###########################")
         return comp_list
 
     @staticmethod
@@ -77,7 +77,7 @@ class FS:
         
         # Process and save quarterly results as Parquet
         quarterly_results = FS.db_quarterly()
-        quarterly_results.to_parquet(r"C:\Users\bboyk\OneDrive\BOYKO TERMINAL\PROGRAMS\Data\Data Hub\Equity\Equity_Firm\Financials\Quarterly\ALL_DATA.parquet")
+        quarterly_results.to_parquet(r"###########################")
         print(quarterly_results)
         print("Quarterly Complete In:", (dt.time() - timer) / 3600, "Hours")
         
@@ -86,7 +86,7 @@ class FS:
         
         # Process and save annual results as Parquet
         annual_results = FS.db_annual()
-        annual_results.to_parquet(r"C:\Users\bboyk\OneDrive\BOYKO TERMINAL\PROGRAMS\Data\Data Hub\Equity\Equity_Firm\Financials\Yearly\ALL_DATA.parquet")
+        annual_results.to_parquet(r"###########################")
         print(annual_results)
         print("Annual Complete In:", (dt.time() - timer) / 3600, "Hours")
 
