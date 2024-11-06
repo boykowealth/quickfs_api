@@ -4,7 +4,7 @@ from API_QFS import qfs_q as QFS_API, qfs_y
 import datetime as dt
 
 global api
-api = 'a83213f6d2d4467d012e10646b1f73cf47324116'
+api = '#######'
 
 class FS:
 
